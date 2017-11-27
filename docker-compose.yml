@@ -26,10 +26,6 @@ services:
     networks:
       - back-tier
     restart: always
-    deploy:
-      placement:
-        constraints:
-          - node.hostname == moby
 
   node-exporter:
     image: prom/node-exporter
