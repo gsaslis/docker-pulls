@@ -69,6 +69,6 @@ services:
      ports:
        - 9170:9170
      environment:
-       - "IMAGES=fluent/fluentd"
+       - "IMAGES=restcomm/restcomm, restcomm/sdr-service, restcomm/ussdgateway-docker, restcomm/smscgateway-docker, restcomm/restcomm-graylog, restcomm/rvd-docker, restcomm/mediaserver-docker, restcomm/statistics-service-docker, restcomm/push-notification-server, restcomm/telscale-smscgateway-docker, restcomm/cloud-signup-docker, restcomm/load-balancer-docker, restcomm/load-balancer, restcomm/restcomm-cloud"
      networks:
        - back-tier
